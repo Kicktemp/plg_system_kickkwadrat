@@ -23,6 +23,18 @@
 @boxdecoration-top-left-border-width:              0;
 @boxdecoration-top-left-border:                    transparent;
 
+@boxdecoration-top-right-top:                               0;
+@boxdecoration-top-right-bottom:                            0;
+@boxdecoration-top-right-left:                              0;
+@boxdecoration-top-right-right:                             0;
+@boxdecoration-top-right-z-index:                           -1;
+
+@boxdecoration-top-right-transform-horizontal:      -20px;
+@boxdecoration-top-right-transform-vertical:        20px;
+@boxdecoration-top-right-background:                darken(@global-muted-background, 3%);
+@boxdecoration-top-right-border-width:              0;
+@boxdecoration-top-right-border:                    transparent;
+
 /* ========================================================================
    Component: Box Decoration
  ========================================================================== */
@@ -59,3 +71,36 @@
 }
 
 .hook-box-decoration-top-left() {}
+
+.tm-box-decoration-top-right {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: @boxdecoration-top-right-top;
+    bottom: @boxdecoration-top-right-bottom;
+    left: @boxdecoration-top-right-left;
+    right: @boxdecoration-top-right-right;
+    z-index: @boxdecoration-top-right-z-index;
+    // Prevent clickable area if box-decoration is above links
+    pointer-events: none;
+  }
+  .hook-box-decoration();
+}
+
+.tm-box-decoration-top-right {
+
+  &::before {
+    transform: translate(@boxdecoration-top-right-transform-horizontal, @boxdecoration-top-right-transform-vertical);
+    background-color: @boxdecoration-top-right-background;
+  }
+  .hook-box-decoration-top-right();
+}
+
+.hook-box-decoration-top-right() when not (@boxdecoration-top-right-border-width = 0) {
+  &::before { border: @boxdecoration-top-right-border-width solid @boxdecoration-top-right-border; }
+}
+
+.hook-box-decoration-top-right() {}
