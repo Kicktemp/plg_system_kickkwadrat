@@ -2,6 +2,15 @@
 	<changelog>
 		<element>kickkwadrat</element>
 		<type>plugin</type>
+		<version>1.0.2</version>
+		<addition>
+			<item>divider overwrite</item>
+			<item>image overwrite</item>
+		</addition>
+	</changelog>
+	<changelog>
+		<element>kickkwadrat</element>
+		<type>plugin</type>
 		<version>1.0.1</version>
 		<note>
 			<item>update test</item>
