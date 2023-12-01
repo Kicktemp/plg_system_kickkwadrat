@@ -1,0 +1,61 @@
+// Name:            Box Decoration
+// Description:     This is my custom component
+//
+// Component:       `boxdecoration`
+//
+// Sub-objects:     `boxdecoration-title`
+//                  `boxdecoration-card`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+@boxdecoration-top-left-top:                               0;
+@boxdecoration-top-left-bottom:                            0;
+@boxdecoration-top-left-left:                              0;
+@boxdecoration-top-left-right:                             0;
+@boxdecoration-top-left-z-index:                           -1;
+
+@boxdecoration-top-left-transform-horizontal:      -20px;
+@boxdecoration-top-left-transform-vertical:        20px;
+@boxdecoration-top-left-background:                darken(@global-muted-background, 3%);
+@boxdecoration-top-left-border-width:              0;
+@boxdecoration-top-left-border:                    transparent;
+
+/* ========================================================================
+   Component: Box Decoration
+ ========================================================================== */
+
+.tm-box-decoration-top-left {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: @boxdecoration-top-left-top;
+    bottom: @boxdecoration-top-left-bottom;
+    left: @boxdecoration-top-left-left;
+    right: @boxdecoration-top-left-right;
+    z-index: @boxdecoration-top-left-z-index;
+    // Prevent clickable area if box-decoration is above links
+    pointer-events: none;
+  }
+  .hook-box-decoration();
+}
+
+.tm-box-decoration-top-left {
+
+  &::before {
+    transform: translate(@boxdecoration-top-left-transform-horizontal, @boxdecoration-top-left-transform-vertical);
+    background-color: @boxdecoration-top-left-background;
+  }
+  .hook-box-decoration-top-left();
+}
+
+.hook-box-decoration-top-left() when not (@boxdecoration-top-left-border-width = 0) {
+  &::before { border: @boxdecoration-top-left-border-width solid @boxdecoration-top-left-border; }
+}
+
+.hook-box-decoration-top-left() {}

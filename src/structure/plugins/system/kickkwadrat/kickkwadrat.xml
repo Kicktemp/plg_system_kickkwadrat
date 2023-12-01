@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<!--<dlid prefix="key="/>-->
+	<name>PLG_SYSTEM_KICKKWADRAT</name>
+	<creationDate>[DATE]</creationDate>
+	<author>[AUTHOR]</author>
+	<authorEmail>[AUTHOR_EMAIL]</authorEmail>
+	<authorUrl>[AUTHOR_URL]</authorUrl>
+	<copyright>[COPYRIGHT]</copyright>
+	<license>[LICENSE]</license>
+	<version>[VERSION]</version>
+	<changelogurl>https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/changelog.xml</changelogurl>
+	<description>PLG_SYSTEM_KICKKWADRAT_XML_DESCRIPTION</description>
+	<namespace path="src">Kicktemp\Plugin\System\Addons</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="kickkwadrat">kickkwadrat.php</filename>
+		<filename>helper.php</filename>
+		<folder>language</folder>
+		<folder>modules</folder>
+	</files>
+	<!--<config>
+		<fields
+			name="params"
+			addfieldpath="/plugins/system/kickkwadrat/fields">
+			<fieldset
+				name="registerwebsite"
+				label="KICKREGISTERWEBSITE_TAB_LABEL">
+				<field
+					name="registerwebsite"
+					label="KICKREGISTERWEBSITE_LABEL"
+					description="KICKREGISTERWEBSITE_DESC"
+					type="registerwebsite"
+				/>
+			</fieldset>
+		</fields>
+	</config>-->
+	<updateservers>
+		<server type="extension" priority="1" name="[PROJECT_NAME]">
+			https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/update.xml
+		</server>
+	</updateservers>
+</extension>

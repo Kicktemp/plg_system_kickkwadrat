@@ -1,0 +1,13 @@
+{
+  "components": {
+    "boxdecoration": {
+      "name": "Box Decoration",
+      "groups": {
+        "top left": "@boxdecoration-top-left-*",
+        "card": "@boxdecoration-card-*"
+      },
+      "hover": "[class*='boxdecoration-']",
+      "inspect": "[class*='boxdecoration'], [class*='boxdecoration'] > *"
+    }
+  }
+}
