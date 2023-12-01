@@ -7,6 +7,30 @@
   <folder>system</folder>
   <client>site</client>
   <section>updates</section>
+  <version>1.0.1</version>
+  <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickkwadrat/main/changelog.xml</changelogurl>
+  <infourl title="KickKwadrat Plugin">https://github.com/Kicktemp/plg_system_kickkwadrat</infourl>
+  <downloads>
+    <downloadurl type="full" format="zip"><![CDATA[https://github.com/Kicktemp/plg_system_kickkwadrat/releases/download/v1.0.1/plg_system_kickkwadrat_1.0.1.zip]]></downloadurl>
+  </downloads>
+  <sha256>969ce50dc7c8a243871534a5f1ea52713e66ee4cf162e57f67e44ec2b5a03adb</sha256>
+  <sha384>d1e9dc467de59b9d9ec0ad8367c4b2bc249867d37d4b8ebacdcf8961e3a5608ef23e63e4b189becc6f1d81d3845c86bc</sha384>
+  <sha512>2461b9879826d001b0c9e9e8a2575688ba6b1a3483ad588af0b9a05f4d094151b4ce00980e379582ad8ebb90437ca6f26cf8c0a1b41f8018b4710de2839a4ff2</sha512>
+  <tags>
+    <tag>stable</tag>
+  </tags>
+  <maintainer>Kicktemp GmbH</maintainer>
+  <maintainerurl>https://kicktemp.com</maintainerurl>
+  <php_minimum>7.2.5</php_minimum>
+  <targetplatform name="joomla" version="((4\.(0|1|2|3))|(5\.(0|1|2|3|4|5|6|7|8|9)))"/>
+</update><update>
+  <name>System - Kicktemp Addons for YOOtheme Pro</name>
+  <description> Kicktemp Addons for YOOtheme Pro Plugin</description>
+  <element>kickkwadrat</element>
+  <type>plugin</type>
+  <folder>system</folder>
+  <client>site</client>
+  <section>updates</section>
   <version>1.0.0</version>
   <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickkwadrat/main/changelog.xml</changelogurl>
   <infourl title="KickKwadrat Plugin">https://github.com/Kicktemp/plg_system_kickkwadrat</infourl>
