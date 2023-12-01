@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<updates>
+<updates><update>
+  <name>System - Kicktemp Addons for YOOtheme Pro</name>
+  <description> Kicktemp Addons for YOOtheme Pro Plugin</description>
+  <element>kickkwadrat</element>
+  <type>plugin</type>
+  <folder>system</folder>
+  <client>site</client>
+  <section>updates</section>
+  <version>1.0.0</version>
+  <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickkwadrat/main/changelog.xml</changelogurl>
+  <infourl title="KickKwadrat Plugin">https://github.com/Kicktemp/plg_system_kickkwadrat</infourl>
+  <downloads>
+    <downloadurl type="full" format="zip"><![CDATA[https://github.com/Kicktemp/plg_system_kickkwadrat/releases/download/v1.0.0/plg_system_kickkwadrat_1.0.0.zip]]></downloadurl>
+  </downloads>
+  <sha256>4e25fe6a78327688838c551b7de169f7ab9137b22945b31dab1382cbd1304cfc</sha256>
+  <sha384>9229551ac5f9e8926a8ec8604ae24fb88bd3bf67c9f9b7f76f49d5724ad2b1eda0788ff28ba55e86ad9786e53e278aeb</sha384>
+  <sha512>ea65d063e4d91f10a8e682968f0aee62890e7dc89127a08b391e2d84d9d92972283d74d8cee48cbd625ebfb5d5a04ce11c80f2ff057991df8b4317c5f8a014d6</sha512>
+  <tags>
+    <tag>stable</tag>
+  </tags>
+  <maintainer>Kicktemp GmbH</maintainer>
+  <maintainerurl>https://kicktemp.com</maintainerurl>
+  <php_minimum>7.2.5</php_minimum>
+  <targetplatform name="joomla" version="((4\.(0|1|2|3))|(5\.(0|1|2|3|4|5|6|7|8|9)))"/>
+</update>
 </updates>
