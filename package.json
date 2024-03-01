@@ -1,6 +1,6 @@
 {
   "name": "KickKwadrat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "scripts": {
@@ -59,7 +59,7 @@
     "[COPYRIGHT]": "Copyright © 2023 Kicktemp GmbH. All rights reserved.",
     "[LICENSE]": "GNU General Public License version 2 or later; see LICENSE.txt",
     "[AUTHOR_URL]": "https://kicktemp.com",
-    "[DATE]": "01.12.2023",
+    "[DATE]": "01.03.2024",
     "[PLUGINTYPE]": "system"
   },
   "casesensitive": {
