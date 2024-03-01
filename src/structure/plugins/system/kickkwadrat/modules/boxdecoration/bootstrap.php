@@ -14,7 +14,6 @@ use YOOtheme\Builder;
 use YOOtheme\Path;
 use YOOtheme\Theme\Styler\StylerConfig;
 
-include_once __DIR__ . '/src/FormListener.php';
 
 return [
     'theme' => [
@@ -31,7 +30,7 @@ return [
 
     'events' => [
         'builder.type' => [
-            FormListener::class => 'addStyleOptions'
+            Src\FormListener::class => 'addStyleOptions'
         ]
     ],
 ];

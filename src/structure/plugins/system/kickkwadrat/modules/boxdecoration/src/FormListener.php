@@ -8,7 +8,7 @@
  * @link       [AUTHOR_URL]
  */
 
-namespace Kicktemp\Kwadrat\Boxdecoration;
+namespace Kicktemp\Kwadrat\Boxdecoration\Src;
 
 use YOOtheme\Config;
 use YOOtheme\Path;

@@ -11,7 +11,7 @@
 	<version>[VERSION]</version>
 	<changelogurl>https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/changelog.xml</changelogurl>
 	<description>PLG_SYSTEM_KICKKWADRAT_XML_DESCRIPTION</description>
-	<namespace path="src">Kicktemp\Plugin\System\Addons</namespace>
+	<namespace path="modules">Kicktemp\Kwadrat</namespace>
 	<scriptfile>script.php</scriptfile>
 	<files>
 		<filename plugin="kickkwadrat">kickkwadrat.php</filename>
